@@ -42,6 +42,7 @@ public class B3ArticleUpdater extends AbstractEventListener<JSONObject> {
      */
     private static final Logger LOGGER = Logger.getLogger(B3ArticleUpdater.class);
 
+    @Override
     public void action(final Event<JSONObject> event) {
         final JSONObject data = event.getData();
         LOGGER.log(Level.DEBUG, "Processing an event [type={0}, data={1}] in listener [className={2}]",
